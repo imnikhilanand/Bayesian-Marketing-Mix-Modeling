@@ -10,6 +10,7 @@ import pandas as pd
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import seaborn as sns
+from scipy.stats import norm
 
 # importing the dataset
 data = pd.read_csv("advertising_data.csv")
@@ -47,6 +48,4 @@ From the above model we can observe that increase in newspaper spending will low
 Similarly, for the radio we can see that the coefficient is 0, which means that the spending in newspaper advertisment will not result in any increase in sale.
 Since, these coefficients does not go along with our assumptions, we have to use Bayesian Model to find the coefficient. 
 '''
-
-
 
